@@ -30,7 +30,7 @@ that’s it! run either sketch >>
 ```bash
 python isometric_cubes_v1.py   # full random
 python isometric_cubes_v2.py   # mouse‑centred
-# click anywhere in the window >> PNG output saved beside the script
+# click anywhere in the window >> PNG outputs saved to sibling folder
 
 ```
 

@@ -23,15 +23,15 @@
 #      pip install --pre py5         # grab the latest py5 nightly
 #
 #  3/ run the sketch:
-#      python isometric_cubes_1.py
+#      python isometric_cubes_v1.py
 #
 #  4/ click anywhere in the window >> PNG output saved beside the script
 # ////////////////////////////////////////////////////////////////
 
-import math
-import random
+import math, random
+import os 
 import pathlib
-import datetime
+from datetime import datetime
 import py5
 
 # ////////////////////////////////////////////////////////////////
@@ -181,16 +181,36 @@ class IsometricCube:
 # ////////////////////////////////////////////////////////////////
 
 def mouse_pressed():
-    # save the current frame as a PNG when user clicks
-    # filename format >> filename-YYYY-MM-DD-HHMMSS-#####.png
+    # save the current frame as a PNG output when user clicks
+    # outputs saved to sibling folder "isometric-cubes-ASK-outputs"
+    # filename format >> isometric_cubes_vX-YYYY-MM-DD-HHMMSS-#####.png
 
-    # current filename
-    base_name = pathlib.Path(__file__).stem
-    # datetime stamp
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d-%H%M%S")
+    # 1/ current script filename
+    script_name = pathlib.Path(__file__).stem
+    
+    # 2/ datetime stamp
+    datetime_stamp = datetime.now().strftime("%Y-%m-%d-%H%M%S")
 
-    # '#####' is a placeholder >> py5 expands it to 00001, 00002, …
-    py5.save_frame(f"{base_name}-{timestamp}-#####.png")
+    # 3/ build output folder path
+    script_dir = pathlib.Path(__file__).parent                # .../isometric-cubes-ASK
+    parent_dir = script_dir.parent                            # .../2025 studioASK/13 python
+    output_dir = parent_dir / "isometric-cubes-ASK-outputs" 
+
+    # 5/ make sure that output folder exists // create it if necessary
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # 6/ get current five‐digit frame count
+    frame_count = py5.frame_count                                             
+    frame_str = f"{frame_count:05d}"
+
+    # 7/ construct final filename >> "isometric_cubes_vX-YYYY-MM-DD-HHMMSS-#####.png"
+    filename = f"{script_name}-{datetime_stamp}-{frame_str}.png"
+
+    # 8/ full path to save
+    save_path = output_dir / filename
+
+    # 9/ finally, save output PNG
+    py5.save_frame(str(save_path))
 
 
 # ////////////////////////////////////////////////////////////////
