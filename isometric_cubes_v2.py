@@ -1,5 +1,5 @@
 # ////////////////////////////////////////////////////////////////
-# randomly spawns grid-aligned isometric cubes in a muted purple ASK color palette
+# mouse centered // randomly spawns grid-aligned isometric cubes in a muted purple ASK color palette
 # cubes spawn in a radius centered around mouse cursor
 # ////////////////////////////////////////////////////////////////
 # Copyright (c) 2025 >> Andrew S Klug // ASK
