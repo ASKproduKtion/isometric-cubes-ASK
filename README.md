@@ -25,7 +25,7 @@ generative art sketches written in python/py5 >> randomly spawns grid-aligned is
 refactored/adapted from ASK's original p5.js >> [https://editor.p5js.org/asymptoticSystemKey/full/bWa1wvK3r](https://editor.p5js.org/asymptoticSystemKey/full/bWa1wvK3r)
 
 | version | behavior                                                                                  |
-|---------|-------------------------------------------------------------------------------------------|
+|:--------|:------------------------------------------------------------------------------------------|
 | v1      | fully random                                                                              |
 | v2      | cubes spawn within a radius centered around the mouse cursor                              |
 
