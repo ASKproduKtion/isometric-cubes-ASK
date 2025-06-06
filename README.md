@@ -18,7 +18,7 @@ To live wisely in such a world is not to impose order, but to let order emerge f
 
 ---
 
-# isometric cubes ASK // py5
+## isometric cubes ASK // py5
 
 generative art sketches written in python/py5 >> randomly spawns grid-aligned isometric cubes in a muted purple ASK color palette
 
