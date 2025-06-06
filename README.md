@@ -6,10 +6,10 @@ generative art sketches written in python/py5
 
 refactored/adapted from ASK's original p5.js >> [https://editor.p5js.org/asymptoticSystemKey/full/bWa1wvK3r](https://editor.p5js.org/asymptoticSystemKey/full/bWa1wvK3r)
 
-| version | behaviour                                                                                                                                                      |   |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |
-| **v1**  | full random // randomly spawns grid-aligned isometric cubes in a muted purple ASK color palette                                                                |   |
-| **v2**  | mouse centered // randomly spawns grid-aligned isometric cubes in a muted purple ASK color palette // cubes spawn within a radius centered around mouse cursor |   |
+| version | behavior                                                                                                                                                       |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **v1**  | full random // randomly spawns grid-aligned isometric cubes in a muted purple ASK color palette                                                                |
+| **v2**  | mouse centered // randomly spawns grid-aligned isometric cubes in a muted purple ASK color palette // cubes spawn within a radius centered around mouse cursor |
 
 ---
 
