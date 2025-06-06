@@ -1,3 +1,5 @@
+![isometric_cubes_v2 output](isometric_cubes_v2-2025-06-05-155633-00587.jpg)
+
 # isometric cubes ASK // py5
 
 generative art sketches written in python/py5
@@ -45,7 +47,7 @@ if you’d rather stay in system Python, just be sure you have >>
 * **Python ≥ 3.8**
 * **Java Runtime 17** // set `JAVA_HOME` or put `java` on your PATH
 
-then:
+then >>
 
 ```bash
 pip install --pre py5
